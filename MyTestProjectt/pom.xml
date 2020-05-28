@@ -2,7 +2,7 @@
   xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
   <modelVersion>4.0.0</modelVersion>
 
-  <groupId>com.ms</groupId>
+  <groupId>com.ms.module</groupId>
   <artifactId>MyTestProjectt</artifactId>
   <version>0.0.1-SNAPSHOT</version>
   <packaging>war</packaging>
@@ -24,4 +24,11 @@
       <scope>test</scope>
     </dependency>
   </dependencies>
+  	<plugin>
+	    <artifactId>maven-war-plugin</artifactId>
+	    <version>3.6.3</version>
+	    <configuration>
+	        <failOnMissingWebXml>false</failOnMissingWebXml>
+	    </configuration>
+	</plugin>
 </project>
